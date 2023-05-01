@@ -1,0 +1,104 @@
+@import '../adaptive';
+
+.answerModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(133, 133, 133, 0.44);
+    padding: 0 24px;
+
+    .modal{
+        position: relative;
+        padding: 24px;
+        background: #FFFFFF;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        @include _lg{
+            width: 520px;
+        }
+        .close{
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            top: 16px;
+            right: 16px;
+            cursor: pointer;
+            i{
+                width: 12px;
+                height: 12px;
+                content: url('../../assets/svg/close-icon.svg');
+            }
+        }
+        .top{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            .userImage{
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background: #418BEC;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .alt{
+                    font-weight: 500;
+                    font-size: 16px;
+                    // line-height: 23px;
+                    color: #FFFFFF;
+                }
+            }
+            .name{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #000000;
+            }
+        }
+        textarea{
+            border: none;
+            border-bottom: 1px solid #C7C7C7;
+            padding: 4px;
+
+            width: 100%;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            // color: #989898;
+
+            &:focus{
+                outline: none;
+            }
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            .btn{
+                background: #418BEC;
+                border-radius: 6px;
+                padding: 8px 16px;
+
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+        }
+    }
+}

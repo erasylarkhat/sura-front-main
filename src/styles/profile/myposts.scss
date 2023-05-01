@@ -1,0 +1,79 @@
+#myposts{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    // .post{
+    //     padding: 0 8px;
+    //     width: 100%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 16px;
+    //     .user{
+    //         display: flex;
+    //         flex-direction: row;
+    //         gap: 12px;
+    //         .userimage{
+    //             width: 32px;
+    //             height: 32px;
+    //             border-radius: 50%;
+    //             overflow: hidden;
+    //             display: flex;
+    //             justify-content: center;
+    //             align-items: center;
+    //             background: #418BEC;
+    //             img{
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 object-fit: cover;
+    //             }
+    //             .alt{
+    //                 font-weight: 500;
+    //                 font-size: 24px;
+    //                 color: #FFFFFF;
+    //             }
+    //         }
+    //         .userinfo{
+    //             flex-grow: 1;
+    //             display: flex;
+    //             flex-direction: column;
+    //             justify-content: space-between;
+    //             .name{
+    //                 font-weight: 500;
+    //                 font-size: 14px;
+    //                 line-height: 16px;
+    //                 color: #000000;   
+    //             }
+    //             .createdAt{
+    //                 font-weight: 500;
+    //                 font-size: 12px;
+    //                 line-height: 14px;
+    //                 color: #7E7E7E;
+    //             }
+    //         }
+    //     }
+    //     .content{
+    //         padding: 0;
+    //         border: none;
+    //         background: none;
+    //         box-shadow: none;
+    //         display: flex;
+    //         flex-direction: column;
+    //         gap: 8px;
+    //         .title{
+    //             background: none;
+    //             font-weight: 700;
+    //             font-size: 15px;
+    //             line-height: 18px;
+    //             color: #000000;
+    //         }
+    //         .description{
+    //             background: none;
+    //             font-weight: 400;
+    //             font-size: 14px;
+    //             line-height: 18px;
+    //             color: #000000;
+    //             box-shadow: none;
+    //         }
+    //     }
+    // }
+}

@@ -1,0 +1,88 @@
+.answer{
+    padding: 0 12px 8px;
+    border-bottom: 1px solid #C7C7C7;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .user{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        .image{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #418BEC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .alt{
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                color: #FFFFFF;
+            }
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            .name{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #000000;                            
+            }
+            .credential{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                color: #7E7E7E;
+            }
+        }
+    }
+    .content{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        gap: 16px;
+        &>div{
+            width: 100px;
+            display: flex;
+            justify-content: end;
+            flex-direction: row;
+            align-items: center;
+            // justify-content: ;
+            gap: 4px;
+
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: #000000;
+            i{
+                cursor: pointer;
+            }
+            &.likes i {
+                content: url('../../assets/images/like.png');
+            }
+            &.dislikes i {
+                content: url('../../assets/images/dislike.png');
+            }
+            &.comments i {
+                content: url('../../assets/images/comment.png');
+            }
+        }
+    }
+}

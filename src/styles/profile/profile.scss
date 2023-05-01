@@ -1,0 +1,148 @@
+#profile{
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .top{
+            background: white;
+            width: 100%;
+            padding: 12px 24px;
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            gap: 24px;
+            .userImage{
+                width: 100px;
+                height: 100px;
+                min-width: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #418BEC;
+                .alt{
+                    font-weight: 500;
+                    font-size: 64px;
+                    color: #FFFFFF;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .info{
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                .name{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 8px;
+
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 28px;
+                    display: flex;
+                    align-items: center;
+
+                    color: #000000;
+                    .edit{
+                        cursor: pointer;
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i{
+                            content: url('../../assets/svg/pencil.svg');
+                        }
+                    }
+                }
+                .details{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    .credential, .bio{
+                        word-wrap: break-word;
+                        flex-grow: 1;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 14px;
+                        white-space: pre-line;
+                        color: #484848;
+                    }
+                }
+            }
+        }
+        .content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .tab-nav{
+                padding: 20px 24px 0;
+                border: 1px solid #C7C7C7;
+                background: white;
+                box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                .tab-item{
+                    position: relative;
+                    flex-grow: 1;
+                    display: flex;
+                    padding-bottom: 12px;
+                    justify-content: center;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #000000;
+                    cursor: pointer;
+                    .hr{
+                        position: absolute;
+                        bottom: 0;
+                        width: 40px;
+                        height: 0;
+                        background: #418BEC;
+                    }
+                    &.active{
+                        color: #418BEC;
+                        .hr{
+                            height: 2px;
+                        }
+                    }
+                }
+                border-bottom: 1px solid #C7C7C7;
+            }
+            .nothing{
+                padding: 20px 24px;
+                border: 1px solid #C7C7C7;
+                background: white;
+                padding: 24px 0;
+                border-bottom: 1px solid #C7C7C7;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+                padding: 64px 0;
+                i{
+                    width: 240px;
+                    content: url('../../assets/images/nothing.png');
+                }
+                .text{
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 14px;
+
+                    color: #7E7E7E;
+                }
+            }
+        }
+    }
+}
